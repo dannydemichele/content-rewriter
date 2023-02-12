@@ -56,7 +56,7 @@ function validateContactForm() {
         valid = false;
     }
 
-    if (field5 == "" || field5 == null) {
+    if (field5 == "") {
         $("#field5-label").html("Required.");
         $("#field5").css('border', '#e66262 1px solid');
         $("#field5").addClass("error-field");
@@ -76,7 +76,6 @@ function validateContactForm() {
     }
     
     if(valid){
-        console.log("heloocsac");
         var url = "https://api.openai.com/v1/completions";
 
         var xhr = new XMLHttpRequest();
